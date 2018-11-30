@@ -79,17 +79,18 @@ insert into Likes values(1025, 1101);
 ```
 
 ## Basic Example
+
 We can see that the `ID` attribute in the `Highschooler` table may correspond to either the `ID1` or the `ID2` attribute of the Likes table.
 
 Let’s go back to the Venn-diagram example.  Let one circle be the IDs of “Highschooler” and the other circle be the `ID1` and/or `ID2` from the “Likes” table. As stated before, the overlap is the commonality.
 
-![Venn](https://bitbucket.org/spencercornish/csci-440-fall2018/raw/f2a627eb7f2c23ae40318785532ab70a28bb9a79/writing/02-tutorial/images/venn.png)
+![Venn](images/venn.png)
 
 In this case, the commonality are the IDs that both the tables share. We know that there is a relationship between the two tables. We can use this knowledge to shrink or manipulate our data.
 
 In this example, an inner join of the Highschooler ID and Likes ID1 has occurred. First, the original output for the “Highschooler” table and “Likes” table is been provided for an easy visual.  
 
-![image 3](https://bitbucket.org/spencercornish/csci-440-fall2018/raw/f2a627eb7f2c23ae40318785532ab70a28bb9a79/writing/02-tutorial/images/image7.png)
+![image 3](images/image7.png)
 
 The syntax for the inner join is
 
@@ -99,7 +100,7 @@ INNER JOIN Likes ON Highschooler.ID = Likes.ID1
 
 The inner join occurs when Highschooler ID is equal to ID1 of the Likes table.  If the data is matched, it is joined into one table.  To make this even easier to visualize, we can show only the output “Highschooler” ID, name and “Likes” ID1.
 
-![Image 7](https://bitbucket.org/spencercornish/csci-440-fall2018/raw/f2a627eb7f2c23ae40318785532ab70a28bb9a79/writing/02-tutorial/images/image3.png)
+![Image 7](images/image3.png)
 
 ## More Complex Examples
 
